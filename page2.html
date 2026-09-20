@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKU</title>
+
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+        <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+        <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+        <link rel="stylesheet" type="text/css" href="styling.css">
+</head>
+<body>
+     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="pencil.png" logo style="width:40px;"> STATIONARY SHOP
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="navbar">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+        <li class="nav-item">
+        <a class="nav-link" href="index.html">Receipt Generator</a>
+        </li>
+    
+        <li class="nav-item">
+        <a class="nav-link" href="page2.html">SKU Generator</a>
+        </li>
+    
+    </ul>
+    </nav>
+  <br>
+  <div class="container">
+        <center>
+        <h3>Items:</h3>
+        <fieldset>
+            <h5>Item Type</h5>
+            <select id="type">
+
+            <option value="WRT" id="write">Writing Material</option>
+            
+            <option value="PPR" id="paper">Paper Material</option>
+            
+            </select>
+            <br><br>
+    
+          <h5>Item Name</h5>
+          <select id="objects">
+            <h3></h3>
+
+              <option value="PEN" id="pen">Pen</option>
+            
+              <option value="PNC" id="penc">Pencil</option>
+            
+              <option value="ERS" id="eraser">Eraser</option>
+            
+              <option value="STN" id="stick">Sticky Notes</option>
+            
+              <option value="NTB"id="book">Notebook</option>
+
+      </select><br><br>
+
+      <h5>Item Quantity</h5>
+       <input type="number" id="number" placeholder="Enter Quantity of Item"><br>
+        <br><br>
+        <input type="button" py-click="generate" value="Generate SKU" style="color: rgb(146, 92, 90);"> <br><br>
+        </fieldset>
+        <br>
+        <hr>
+
+        <div class="result" id="result"><h9>SKU appears here<br>↓   ↓   ↓</h9></div><br><br></center>
+    </div>
+    <py-script src="sku.py"></py-script>
+</body>
+</html>

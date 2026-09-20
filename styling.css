@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(235, 228, 220);
+}
+
+
+.container{
+    background-color: rgb(153, 104, 101);
+    border-radius: 70px;
+    border-width: 50px;
+    max-width: 30%;
+}
+
+fieldset{
+    background-color: rgb(201, 175, 168);
+    border-radius: 30px;
+    border-width: 20px;
+}
+
+h5{color: rgb(70, 35, 35);}
+h3{color:rgb(54, 30, 30)}
+
+.result{
+    background-color: rgb(243, 240, 237);
+    max-width:50%;
+    border-radius: 10px;
+}
